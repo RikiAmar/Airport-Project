@@ -13,7 +13,7 @@ const setStations = (plane) => {
     stations[plane.currentStation].isOccupied = true;
     stations[plane.currentStation].flightNumber.push(plane.flightNumber);
     if (plane.currentStation !== 1) {
-        stations[plane.prevStation].isOccupied = true;
+        stations[plane.prevStation].isOccupied = false;
         stations[plane.prevStation].flightNumber = [];
     }
 }
